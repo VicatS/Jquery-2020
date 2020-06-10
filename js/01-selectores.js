@@ -7,4 +7,10 @@ $(document).ready(function () {
     $("#green").css("background", "green")
         .css("color", "white")
 
+//    Selectores de clases
+    let my_class = $(".zebra").css("padding", "5px")
+
+    $('.no_border').click(function () {
+        $(this).addClass('zebra')
+    })
 })
