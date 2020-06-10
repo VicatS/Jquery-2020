@@ -13,12 +13,21 @@
         .big{
             font-size: 30px;
         }
+
+        .top-margin{
+            display: block;
+            margin-top: 45px;
+        }
+
+        .highlighted{
+            border-bottom: 2px solid brown;
+        }
     </style>
 <!--    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>-->
 
 </head>
 <body>
-    <h1>Aprendiendo Jquery con Victor Robles WEB</h1>
+    <h1>Learning Jquery with Victor Robles WEB</h1>
     
     <ul>
         <li><a href="https://www.google.com" title="Google">Go to Google</a></li>
@@ -31,11 +40,14 @@
 
 <p class="zebra">Soy un párrafo blanco</p>
 
-
-
-
-
-
+<div id="box">
+    <p>Hello, I am box</p>
+    <ul>
+        <li>Element 1</li>
+        <li id="element2">Element 2</li>
+    </ul>
+    <span class="highlighted">I am span</span>
+</div>
 
 </body>
 </html>

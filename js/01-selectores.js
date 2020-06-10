@@ -30,4 +30,12 @@ $(function () {
 
     $('[title="Google"]').css('background', '#ccc')
     $('[title="Facebook"]').css('background', 'blue')
+
+//    Others
+//     $('p, a').addClass('top-margin')
+
+    // let search = $("#box").find('.highlighted')
+    // let search = $("#box .highlighted").eq(0).parent().parent().parent().find('[title="Google"]')
+    let search = $("#element2").parent().parent().find('.highlighted')
+    console.log(search)
 })
