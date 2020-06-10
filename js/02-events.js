@@ -17,4 +17,14 @@ $(function () {
     }
 //    Hover
     box.hover(changeRed, changeGreen)
+
+//    Click, Double Click
+    box.click(function () {
+        $(this).css('background', 'blue')
+            .css('color', 'white')
+    })
+    box.dblclick(function () {
+        $(this).css('background', 'purple')
+            .css('color', 'white')
+    })
 })
