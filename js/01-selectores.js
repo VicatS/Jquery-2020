@@ -1,5 +1,5 @@
-$(document).ready(function () {
-//    Selector de ID
+$(function () {
+//    ID Selectors
     let red = $("#red").css("background", "red")
         .css("color", "white")
     $("#yellow").css("background", "yellow")
@@ -7,10 +7,22 @@ $(document).ready(function () {
     $("#green").css("background", "green")
         .css("color", "white")
 
-//    Selectores de clases
+//    Class Selectors
     let my_class = $(".zebra").css("padding", "5px")
 
     $('.no_border').click(function () {
         $(this).addClass('zebra')
+    })
+
+//    Label Selectors
+    let paragraph = $('p').css('cursor', 'pointer')
+
+    paragraph.click(function () {
+        let that = $(this)
+        if (!that.hasClass('big')) {
+            that.addClass('big')
+        }else{
+            that.removeClass('big')
+        }
     })
 })
