@@ -38,4 +38,25 @@ $(function () {
         $(this).css("border", "1px solid #ccc")
         $("#info").text($(this).val()).show()
     })
+
+//    mousedown and mouseup
+    let info = $("#info")
+    info.mousedown(function () {
+        $(this).css("border-color", "gray")
+    })
+    info.mouseup(function () {
+        $(this).css("border-color", "black")
+    })
+
+//    mousemove
+    $(document).mousemove(function () {
+/*        console.log("En X:" + event.clientX)
+        console.log("En Y:" + event.clientY)*/
+        /*let followMe = $("#followMe")
+        followMe.css("left", event.clientX)
+        followMe.css("top", event.clientY)*/
+        $('body').css("cursor", "none")
+        $("#followMe").css("left", event.clientX)
+            .css("top", event.clientY)
+    })
 })
