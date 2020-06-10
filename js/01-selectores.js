@@ -25,4 +25,9 @@ $(function () {
             that.removeClass('big')
         }
     })
+
+//    Attribute selectors
+
+    $('[title="Google"]').css('background', '#ccc')
+    $('[title="Facebook"]').css('background', 'blue')
 })
