@@ -5,13 +5,15 @@ $(function () {
     $('#show').click(function () {
         $(this).hide()
         $('#hidden').show()
-        box.slideDown('slow', 1)
+        box.slideDown('slow')
     })
 
     $('#hidden').click(function () {
         $(this).hide()
         $('#show').show()
-        box.slideUp('slow', 0)
+        box.slideUp('slow', function () {
+            console.log("Cartel ocultado")
+        })
     })
 
     $('#allInOne').click(function () {
