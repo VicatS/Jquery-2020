@@ -5,4 +5,7 @@ $(function () {
 
 // Resize
     element.resizable()
+
+//    Selectable element
+    $('.selectable-list').selectable()
 })
