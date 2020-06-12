@@ -7,5 +7,12 @@ $(function () {
     element.resizable()
 
 //    Selectable element
-    $('.selectable-list').selectable()
+//     $('.selectable-list').selectable()
+
+//    Sortable
+    $('.selectable-list').sortable({
+        update: function (event, ui) {
+            console.log('Has changed the list')
+        }
+    })
 })
