@@ -23,4 +23,16 @@ $(function () {
             console.log("Have you dropped something into the area")
         }
     })
+
+//    Effects
+    $('#show').click(function () {
+        // $('.box-effects').fadeToggle()
+        // $('.box-effects').effect("explode")
+        // $('.box-effects').toggle("blind")
+        // $('.box-effects').toggle("slide")
+        // $('.box-effects').toggle("drop")
+        // $('.box-effects').toggle("fold")
+        // $('.box-effects').toggle("puff")
+        $('.box-effects').toggle("shake", 'slow')
+    })
 })
