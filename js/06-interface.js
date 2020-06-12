@@ -1,4 +1,8 @@
 $(function () {
-    // Move item on page
-    $('.element').draggable()
+    let element = $('.element')
+// Move item on page
+    element.draggable()
+
+// Resize
+    element.resizable()
 })
