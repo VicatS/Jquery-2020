@@ -15,4 +15,12 @@ $(function () {
             console.log('Has changed the list')
         }
     })
+
+//    Drop
+    $('#moved-item').draggable()
+    $('#area').droppable({
+        drop: function () {
+            console.log("Have you dropped something into the area")
+        }
+    })
 })
