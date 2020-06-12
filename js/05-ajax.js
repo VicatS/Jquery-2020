@@ -15,13 +15,27 @@ $(function () {
             "name": $('input[name="name"]').val(),
             "web": $('input[name="web"]').val()
         }
-        console.log(user)
-        $.post($(this).attr("action"), user, function (response) {
+
+        /*$.post($(this).attr("action"), user, function (response) {
             console.log(response)
         }).done(function () {
             alert("User successfully added")
-        })
+        })*/
 
+        $.ajax({
+            type: 'POST',
+            url: $(this).attr("action"),
+            beforeSend: function() {
+                console.log("Sending user")
+            },
+            success: function (response) {
+                console.log(response)
+            },
+            error: function () {
+                console.log("An error has occurred")
+            },
+            timeout: 2000
+        })
         return false;
     })
 })
