@@ -1,3 +1,4 @@
 $(function () {
-    console.log("Hello Vicco")
+    // Move item on page
+    $('.element').draggable()
 })
