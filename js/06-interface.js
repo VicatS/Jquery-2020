@@ -35,4 +35,7 @@ $(function () {
         // $('.box-effects').toggle("puff")
         $('.box-effects').toggle("shake", 'slow')
     })
+
+//    Tooltip
+    $(document).tooltip()
 })
