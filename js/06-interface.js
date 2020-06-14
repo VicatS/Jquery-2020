@@ -57,4 +57,7 @@ $(function () {
             "Lunes", "Martes", "Miercoles", "Jueves", "Viernes","Sábado","Domingo"
         ]
     })
+
+//    Tabs
+    $("#tabs").tabs()
 })
