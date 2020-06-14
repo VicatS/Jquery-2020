@@ -44,5 +44,17 @@ $(function () {
         $("#popup").dialog()
     })
 
-
+// Datepicker
+    $("#calendar").datepicker({
+        dateFormat: "dd-mm-yy",
+        changeMonth: true,
+        showOtherMonths: true,
+        buttonImageOnly: true,
+        dayNamesMin: [
+            "Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"
+        ],
+        dayNames: [
+            "Lunes", "Martes", "Miercoles", "Jueves", "Viernes","Sábado","Domingo"
+        ]
+    })
 })
