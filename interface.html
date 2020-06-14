@@ -13,7 +13,7 @@
     <script type="text/javascript" src="js/06-interface.js"></script>
 
     <style>
-        .element{
+        .element {
             width: 300px;
             height: 200px;
             border: 4px solid black;
@@ -21,7 +21,8 @@
             margin: 20px;
             float: left;
         }
-        .selectable-list li{
+
+        .selectable-list li {
             width: 80%;
             padding: 20px;
             border: 1px solid #cccccc;
@@ -29,22 +30,27 @@
             cursor: pointer;
         }
 
-        ul .ui-selecting { background: green}
-        ul .ui-selected { background: blue }
+        ul .ui-selecting {
+            background: green
+        }
 
-        #moved-item{
+        ul .ui-selected {
+            background: blue
+        }
+
+        #moved-item {
             width: 100px;
             height: 100px;
             border: 4px solid red;
         }
 
-        #area{
+        #area {
             width: 300px;
             height: 300px;
             border: 4px solid green;
         }
 
-        .box-effects{
+        .box-effects {
             background: pink;
             float: none;
             display: none;
@@ -66,7 +72,21 @@
 
 <hr>
 
+<h3>Dialog boxes</h3>
+<button id="throw-popup">
+    Throw me
+</button>
+<div id="popup" title="Are you sure?" style="display: none">
+    <p>
+        If you continue in the course
+        you will inevitably learn a lot
+        of Javascript
+    </p>
+</div>
+<hr>
+
 <button id="show">Show</button>
+<br><br>
 
 <div class="box-effects element"></div>
 

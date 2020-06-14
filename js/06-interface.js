@@ -38,4 +38,11 @@ $(function () {
 
 //    Tooltip
     $(document).tooltip()
+
+//    Dialog
+    $("#throw-popup").on("click",function () {
+        $("#popup").dialog()
+    })
+
+
 })
